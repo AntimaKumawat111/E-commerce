@@ -1,5 +1,5 @@
 // Next.js Image component ko import karna hoga
-import Image from 'next/image';
+import Image from "next/image";
 
 function Photo({ cardNo, id, imagesrc, pvalue, rate }) {
   return (
@@ -22,18 +22,53 @@ export default function Logos() {
   return (
     <>
       <div className="logos">
-        <Image src="/images/Versace.png" alt="Versace" id="versaceImg" className="logo" width={100} height={100} />
-        <Image src="/images/Zara.png" alt="Zara" id="ZaraImg" className="logo" width={100} height={100} />
-        <Image src="/images/Gucci.png" alt="Gucci" id="GucciImg" className="logo" width={100} height={100} />
-        <Image src="/images/Prada.png" alt="Prada" id="PradaImg" className="logo" width={100} height={100} />
-        <Image src="/images/CalvinKlein.png" alt="Calvin Klein" id="CalvinKleinImg" className="logo" width={100} height={100} />
+        <img
+          src="public/images/Versace.png"
+          alt="Versace"
+          id="versaceImg"
+          className="logo"
+          width={100}
+          height={100}
+        />
+        <img
+          src="public/images/Zara.png"
+          alt="Zara"
+          id="ZaraImg"
+          className="logo"
+          width={100}
+          height={100}
+        />
+        <img
+          src="public/images/Gucci.png"
+          alt="Gucci"
+          id="GucciImg"
+          className="logo"
+          width={100}
+          height={100}
+        />
+        <img
+          src="public/images/Prada.png"
+          alt="Prada"
+          id="PradaImg"
+          className="logo"
+          width={100}
+          height={100}
+        />
+        <img
+          src="public/images/CalvinKlein.png"
+          alt="Calvin Klein"
+          id="CalvinKleinImg"
+          className="logo"
+          width={100}
+          height={100}
+        />
 
         <h1 id="newArrivals">NEW ARRIVALS</h1>
 
         <Photo
           cardNo="one"
           id="firshirtImg"
-          imagesrc="/images/frame1.png"
+          imagesrc="public/images/frame1.png"
           pvalue="T-SHIRT WITH TAPE DETAILS"
           rate="120"
         />
@@ -41,7 +76,7 @@ export default function Logos() {
         <Photo
           cardNo="second"
           id="secondshirtImg"
-          imagesrc="/images/frame2.png"
+          imagesrc="public/images/frame2.png"
           pvalue="SKINNY FIT JEANS"
           rate="240"
         />
@@ -49,18 +84,18 @@ export default function Logos() {
         <Photo
           cardNo="third"
           id="thirdshirtImg"
-          imagesrc="/images/frame3.png"
+          imagesrc="public/images/frame3.png"
           pvalue="CHECKERED SHIRT"
           rate="180"
         />
         <Photo
           cardNo="fourth"
           id="fourthshirtImg"
-          imagesrc="/images/frame4.png"
+          imagesrc="public/images/frame4.png"
           pvalue="SLEEVE STRIPED T-SHIRT"
           rate="130"
         />
-        
+
         <button id="viewBtn">View All</button>
       </div>
     </>
