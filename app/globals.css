@@ -127,8 +127,8 @@ body {
   border-radius: 50px;
   position: absolute;
   left: 700px;
-  top : 58px;
-  /* border : 2px solid black; */
+  top : 20px;
+  border : 2px solid black;
 } 
 
 #searchIcon {
@@ -139,8 +139,192 @@ body {
 
  #inputbox {
   width: 500px;
-  height: 48px;
+  height: 40px;
   background: #f0f0f0;
   border: none;
   outline: none;
+}
+
+#cartIcon {
+  position: absolute;
+  left: 1350px;
+  color: black;
+  font-size: 28px;
+}
+
+#profileIcon {
+  position: absolute;
+  left: 1400px;
+  color: black;
+  font-size: 28px;
+}
+
+#posterImg {
+  width: 100vw;
+  height: 648px;
+  position: absolute;
+  top: 128px;
+  z-index: 0;
+}
+
+
+#findBox {
+  position: absolute;
+  z-index: 2;
+  top: 230px;
+  left: 100px;
+  color: black;
+  font-size: 55px;
+  font-weight: 900;
+  width: 490px;
+  height: 180px;
+  border: 2px solid black;
+  line-height: 60px;
+  gap: 0%;
+  word-spacing: 0.1px;
+  font-family: "Poppins", sans-serif;
+}
+
+#browsebox {
+  position: absolute;
+  color: black;
+  z-index: 2;
+  width: 490px;
+  height: auto;
+  top: 442px;
+  left: 100px;
+  font-weight: 100;
+  font-size: 14px;
+  border: 2px solid black;
+  opacity: 0.7;
+}
+
+#vector {
+  width: 56px;
+  height: 56px;
+  top: 441px;
+  color: black;
+  left: 750px;
+  position: absolute;
+  border: 2px solid black;
+}
+
+#shopBtn {
+  position: absolute;
+  width: 210px;
+  height: 52px;
+  top: 507px;
+  left: 100px;
+  border-radius: 62px;
+  z-index: 2;
+  background-color: black;
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 54px;
+  padding-right: 54px;
+  gap: 12px;
+}
+
+#vector2 {
+  width: 104px;
+  height: 104px;
+  top: 215px;
+  color: #000000;
+  left: 1355px;
+  position: absolute;
+  border: 2px solid black;
+}
+
+
+
+.rates {
+  position: absolute;
+  width: 596px;
+  height: 74px;
+  top: 607px;
+  left: 100px;
+  z-index: 2;
+  color: black;
+  display: flex;
+  gap: 28px;
+}
+
+.firstRate {
+  width: 141px;
+  height: 76px;
+  border: 2px solid black;
+}
+
+#firstValue {
+  width: 107px;
+  height: 48px;
+  font-weight: 550;
+  font-size: 45px;
+  line-height: 54px;
+  border: 2px solid black;
+}
+
+#firstP {
+  width: 141px;
+  height: 42px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #00000099;
+}
+
+.verticalLine {
+  width: 2px;
+  border: 1px;
+  height: 76px;
+  rotate: -90px;
+  background-color: black;
+  opacity: 0.1;
+}
+
+.secondRate {
+  width: 156px;
+  height: 76px;
+  border: 2px solid black;
+}
+
+#secondValue {
+  width: 146px;
+  height: 48px;
+  font-weight: 550;
+  font-size: 45px;
+  line-height: 44px;
+}
+
+#secondp {
+  width: 156px;
+  height: 22px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #00000099;
+}
+
+.thirdRate {
+  width: 171px;
+  height: 76px;
+  border: 2px solid;
+}
+
+#thirdValue {
+  width: 171px;
+  height: 48px;
+  font-weight: 550;
+  font-size: 45px;
+  line-height: 54px;
+}
+
+#thirdp {
+  width: 126px;
+  height: 22px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #00000099;
 }

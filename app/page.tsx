@@ -1,28 +1,26 @@
 "use client";
 
+import Image from "next/image";
 import Header from "./Header";
 import SubHeader from "./Subheader";
-import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import { useEffect, useState } from "react";
+import Rectangle2 from "../public/images/Rectangle2.png";
+import LeftContainer from "./LeftContanir";
+import Vector from "../public/images/Vector.png";
+import Vector2 from "../public/images/Vector2.png";
+import Btn from "./Bttn";
 
 export default function Home() {
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);  // This will ensure the component renders only on the client.
-  }, []);
-
-  if (!isClient) return null;
-
   return (
     <div className="container">
       <div className="page1">
         <Header />
         <SubHeader />
-        <div className="inputdiv">
-          <SearchOutlinedIcon id="searchIcon" />
-          <input placeholder="Search for products..." id="inputbox" />
-        </div>
+        <Image src={Rectangle2} alt="poster" id="posterImg" />
+        <LeftContainer />
+        <Image src={Vector} alt="Vector" id="vector" />
+        <Image src={Vector2} alt="Vector" id="vector2" />
+        <Btn id="shopBtn" />
+        
       </div>
     </div>
   );
