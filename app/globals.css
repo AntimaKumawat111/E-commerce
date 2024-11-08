@@ -419,6 +419,8 @@ body {
   height: 380px;
   width: 298px;
   display: inline-block;
+  border : 1px solid black;
+  z-index : 3;
 }
 
 #firshirtImg {
@@ -433,6 +435,8 @@ body {
   height: 380px;
   width: 298px;
   display: inline-block;
+  z-index : 3;
+
 }
 
 #secondshirtImg {
@@ -447,6 +451,8 @@ body {
   height: 380px;
   width: 298px;
   display: inline-block;
+  z-index : 3;
+
 }
 
 #thirdshirtImg {
@@ -461,6 +467,8 @@ body {
   height: 380px;
   width: 298px;
   display: inline-block;
+  z-index : 3;
+
 }
 
 #fourthshirtImg {
