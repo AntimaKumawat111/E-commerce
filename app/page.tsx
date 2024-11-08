@@ -52,19 +52,58 @@ export default function Home() {
       <div className="page1">
         <Header />
         <SubHeader />
-        <Image src={Rectangle2} alt="poster" id="posterImg" width={500} height={300} />
+        <Image
+          src={Rectangle2}
+          alt="poster"
+          id="posterImg"
+          width={500}
+          height={300}
+        />
         <LeftContainer />
         <Image src={Vector} alt="Vector" id="vector" width={100} height={100} />
-        <Image src={Vector2} alt="Vector" id="vector2" width={100} height={100} />
+        <Image
+          src={Vector2}
+          alt="Vector"
+          id="vector2"
+          width={100}
+          height={100}
+        />
         <Btn id="shopBtn" />
       </div>
 
-      <div className="page2">
         <div className="logos">
-          <Image src={Versace} alt="Versace" id="versaceImg" className="logo" width={100} height={100} />
-          <Image src={Zara} alt="Zara" id="ZaraImg" className="logo" width={100} height={100} />
-          <Image src={Gucci} alt="Gucci" id="GucciImg" className="logo" width={100} height={100} />
-          <Image src={Prada} alt="Prada" id="PradaImg" className="logo" width={100} height={100} />
+          <Image
+            src={Versace}
+            alt="Versace"
+            id="versaceImg"
+            className="logo"
+            width={100}
+            height={100}
+          />
+          <Image
+            src={Zara}
+            alt="Zara"
+            id="ZaraImg"
+            className="logo"
+            width={100}
+            height={100}
+          />
+          <Image
+            src={Gucci}
+            alt="Gucci"
+            id="GucciImg"
+            className="logo"
+            width={100}
+            height={100}
+          />
+          <Image
+            src={Prada}
+            alt="Prada"
+            id="PradaImg"
+            className="logo"
+            width={100}
+            height={100}
+          />
           <Image
             src={CalvinKlein}
             alt="Calvin Klein"
@@ -73,13 +112,26 @@ export default function Home() {
             width={100}
             height={100}
           />
+        </div>
 
-          
+
+
+
+
+
+
+
+
+
+        
+        <div className="page2">
+      
+        <div>
           <h1 id="newArrivals">NEW ARRIVALS</h1>
 
           <Photo
             cardNo="one"
-            id="firshirtImg"
+            id="firstImg"
             imagesrc="/images/Frame1.png"
             pvalue="T-SHIRT WITH TAPE DETAILS"
             rate="120"
@@ -87,7 +139,7 @@ export default function Home() {
 
           <Photo
             cardNo="second"
-            id="secondshirtImg"
+            id="secondtImg"
             imagesrc="/images/Frame2.png"
             pvalue="SKINNY FIT JEANS"
             rate="240"
@@ -95,21 +147,88 @@ export default function Home() {
 
           <Photo
             cardNo="third"
-            id="thirdshirtImg"
+            id="thirdImg"
             imagesrc="/images/Frame3.png"
             pvalue="CHECKERED SHIRT"
             rate="180"
           />
           <Photo
             cardNo="fourth"
-            id="fourthshirtImg"
+            id="fourthImg"
             imagesrc="/images/Frame4.png"
             pvalue="SLEEVE STRIPED T-SHIRT"
             rate="130"
           />
           <button id="viewBtn">View All</button>
         </div>
-      </div>
+        </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div className="page3">
+
+      
+        <h1 id="topSelling">TOP SELLING</h1>
+
+        <Photo
+          cardNo="fifth"
+          id="fifthImg"
+          imagesrc="/images/Frame5.png"
+          pvalue="VERTICAL STRIPED SHIRT"
+          rate="212"
+        />
+
+        <Photo
+          cardNo="sixth"
+          id="sixthImg"
+          imagesrc="/images/Frame6.png"
+          pvalue="COURAGE GRAPHIC T-SHIRT"
+          rate="145"
+        />
+
+        <Photo
+          cardNo="seventh"
+          id="seventhImg"
+          imagesrc="/images/Frame7.png"
+          pvalue="LOOSE FIT BERMUDA SHORTS"
+          rate="80"
+        />
+
+        <Photo
+          cardNo="eighth"
+          id="eighthImg"
+          imagesrc="/images/Frame8.png"
+          pvalue="FADED SKINNY JEANS"
+          rate="210"
+        />
+
+        <button id="view2Btn">View All</button>
+        </div> 
+
+
+
+
+
     </div>
   );
 }

@@ -20,9 +20,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
 * {
   margin: 0%;
   padding: 0%;
@@ -38,9 +35,9 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: white;
-  border: 2px solid black;
+  /* border: 2px solid green; */
   position: relative;
-  z-index: 0;
+  overflow: hidden;
 }
 
 .header {
@@ -157,13 +154,14 @@ body {
   font-size: 28px;
 }
 
-
 #posterImg {
   width: 100vw;
   height: auto;
   position: absolute;
   top: 128px;
+  left: 0;
   z-index: 0;
+  object-fit: fill;
 }
 
 #findBox {
@@ -325,14 +323,6 @@ body {
   color: #00000099;
 }
 
-.page2 {
-  height: 100vh;
-  width: 100%;
-  background-color: white;
-  border: 2px solid rgba(242, 52, 52, 0.729);
-  z-index: 0;
-}
-
 .logos {
   position: absolute;
   z-index: 1;
@@ -340,6 +330,7 @@ body {
   height: 122px;
   top: 777px;
   background-color: black;
+  /* display: none; */
 }
 
 #versaceImg {
@@ -396,11 +387,20 @@ body {
   padding: 0.4px 0px 0.4px 0px;
 }
 
+.page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  margin-top: 122px;
+  left: 0;
+}
+
 #newArrivals {
   position: absolute;
   width: 500px;
   height: 58px;
-  top: 200px;
+  top: 70px;
   left: 518px;
   gap: 0px;
   color: black;
@@ -409,51 +409,48 @@ body {
   text-align: center;
   border: 2px solid black;
   line-height: 57.6px;
-  z-index : 3;
+  z-index: 3;
 }
 
 #one {
   position: absolute;
-  top: 300px;
+  top: 180px;
   left: 100px;
   height: 380px;
   width: 298px;
   display: inline-block;
-  border : 1px solid black;
-  z-index : 3;
+  border: 1px solid black;
+  z-index: 3;
 }
 
 #second {
   position: absolute;
-  top: 300px;
+  top: 180px;
   left: 445px;
   height: 380px;
   width: 298px;
   display: inline-block;
-  z-index : 3;
-
+  z-index: 3;
 }
 
 #third {
   position: absolute;
-  top: 300px;
+  top: 180px;
   left: 790px;
   height: 380px;
   width: 298px;
   display: inline-block;
-  z-index : 3;
-
+  z-index: 3;
 }
 
 #fourth {
   position: absolute;
-  top: 300px;
+  top: 180px;
   left: 1135px;
   height: 380px;
   width: 298px;
   display: inline-block;
-  z-index : 3;
-
+  z-index: 3;
 }
 
 #ptitle {
@@ -467,8 +464,8 @@ body {
 #prate {
   color: black;
   width: 55px;
-  height: 32px;
-  font-size: 20px;
+  height: 30px;
+  font-size: 25px;
   font-weight: 700;
   gap: 10px;
   border: 2px solid black;
@@ -477,7 +474,6 @@ body {
 #viewBtn {
   width: 218px;
   height: 52px;
-
   background-color: #f0f0f0;
   color: black;
   padding-top: 13px;
@@ -485,10 +481,105 @@ body {
   padding-right: 54px;
   padding-left: 54px;
   position: absolute;
-  bottom: -650px;
+  bottom: 110px;
   left: 611px;
   border-radius: 62px;
   gap: 12px;
   outline: 0.2px solid black;
-  font-size: 20px;
+  font-size: 15px;
+}
+
+#firstImg,
+#secondtImg,
+#thirdImg,
+#fourthImg,
+#fifthImg,
+#sixthImg,
+#seventhImg,
+#eighthImg {
+  margin-bottom: 13px;
+  height: 298px;
+  width: 100%;
+  border: 1px solid black;
+}
+
+#pstars {
+  color: black;
+}
+
+.page3 {
+  height: 100vh;
+  width: 100%;
+  border-top: 2px solid #f2f0f1;
+}
+
+#topSelling {
+  position: absolute;
+  width: 500px;
+  height: 58px;
+  top: 1750px;
+  left: 518px;
+  color: black;
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 37.6px;
+}
+
+#fifth {
+  position: absolute;
+  top: 1850px;
+  left: 100px;
+  height: 380px;
+  width: 298px;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+#sixth {
+  position: absolute;
+  left: 445px;
+  height: 380px;
+  top: 1850px;
+  width: 298px;
+  display: inline-block;
+  z-index: 3;
+}
+
+#seventh {
+  position: absolute;
+  top: 1850px;
+  left: 790px;
+  height: 380px;
+  width: 298px;
+  display: inline-block;
+  z-index: 3;
+}
+
+#eighth {
+  position: absolute;
+  top: 1850px;
+  left: 1135px;
+  height: 380px;
+  width: 298px;
+  display: inline-block;
+  z-index: 3;
+}
+
+#view2Btn {
+  width: 218px;
+  height: 52px;
+  background-color: #f0f0f0;
+  color: black;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  padding-right: 54px;
+  padding-left: 54px;
+  position: absolute;
+  top: 2300px;
+  left: 611px;
+  border-radius: 62px;
+  gap: 12px;
+  outline: 0.2px solid black;
+  font-size: 15px;
 }
