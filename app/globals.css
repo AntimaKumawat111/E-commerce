@@ -160,7 +160,7 @@ body {
 
 #posterImg {
   width: 100vw;
-  height: 648px;
+  height: auto;
   position: absolute;
   top: 128px;
   z-index: 0;
