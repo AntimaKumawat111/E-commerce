@@ -1,6 +1,5 @@
 "use client";
 
-import ProductionQuantityLimitsIcon from "@mui/icons-material/ProductionQuantityLimits";
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
