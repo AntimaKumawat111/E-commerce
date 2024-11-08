@@ -396,14 +396,13 @@ body {
   padding: 0.4px 0px 0.4px 0px;
 }
 
-.newArrivals {
+#newArrivals {
   position: absolute;
   width: 500px;
   height: 58px;
   top: 200px;
   left: 518px;
   gap: 0px;
-  opacity: 0px;
   color: black;
   font-size: 48px;
   font-weight: 800;
