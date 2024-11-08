@@ -1,7 +1,7 @@
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-
+// import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 
 export default function SubHeader() {
   return (
@@ -16,10 +16,6 @@ export default function SubHeader() {
           <a href="#" className="tags">Brands</a>
         </div>
       </div>
-      {/* <div className="inputdiv">
-        <SearchIcon id="searchIcon" />
-        <input placeholder="Search for products..." id="inputbox" />
-      </div> */}
       <AccountCircleIcon id="profileIcon"/>
       <ProductionQuantityLimitsIcon id ="cartIcon" />
     </div>
