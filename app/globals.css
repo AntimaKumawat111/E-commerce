@@ -57,3 +57,61 @@ body {
   font-size: small;
   z-index: 1;
 }
+
+
+.sub-header {
+  color: white;
+  width: 100vw;
+  height: 90px;
+  top: -738px;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-weight: 300;
+  font-size: small;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  left: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  height: 40px;
+  width: 700px;
+  gap: 24px;
+}
+
+#shop {
+  width: 160px;
+  height: 35px;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 38.4px;
+}
+
+.ancherTag {
+  height: 22px;
+}
+
+#shopTag {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#downArrow {
+  margin-right: 8px;
+}
+
+.ancherTag .tags {
+  margin: 8px;
+  width: 50px;
+  height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.6px;
+}
