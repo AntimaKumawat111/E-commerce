@@ -20,15 +20,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+
 * {
   margin: 0%;
   padding: 0%;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
   background-color: black;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -408,7 +408,7 @@ body {
   font-size: 48px;
   font-weight: 800;
   text-align: center;
-  border: 1px solid black;
+  border: 3px solid black;
   line-height: 57.6px;
 }
 
@@ -423,11 +423,6 @@ body {
   z-index : 3;
 }
 
-#firshirtImg {
-  width: 100%;
-  height: auto;
-}
-
 #second {
   position: absolute;
   top: 300px;
@@ -437,11 +432,6 @@ body {
   display: inline-block;
   z-index : 3;
 
-}
-
-#secondshirtImg {
-  width: 100%;
-  height: auto;
 }
 
 #third {
@@ -455,11 +445,6 @@ body {
 
 }
 
-#thirdshirtImg {
-  width: 100%;
-  height: auto;
-}
-
 #fourth {
   position: absolute;
   top: 300px;
@@ -469,11 +454,6 @@ body {
   display: inline-block;
   z-index : 3;
 
-}
-
-#fourthshirtImg {
-  width: 100%;
-  height: auto;
 }
 
 #ptitle {

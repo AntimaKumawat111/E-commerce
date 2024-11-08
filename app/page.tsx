@@ -73,6 +73,8 @@ export default function Home() {
             width={100}
             height={100}
           />
+
+          
           <h1 id="newArrivals">NEW ARRIVALS</h1>
 
           <Photo
