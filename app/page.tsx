@@ -80,7 +80,7 @@ export default function Home() {
           <Photo
             cardNo="one"
             id="firshirtImg"
-            imagesrc="/images/frame1.png"
+            imagesrc="/images/Frame1.png"
             pvalue="T-SHIRT WITH TAPE DETAILS"
             rate="120"
           />
@@ -88,7 +88,7 @@ export default function Home() {
           <Photo
             cardNo="second"
             id="secondshirtImg"
-            imagesrc="/images/frame2.png"
+            imagesrc="/images/Frame2.png"
             pvalue="SKINNY FIT JEANS"
             rate="240"
           />
@@ -96,14 +96,14 @@ export default function Home() {
           <Photo
             cardNo="third"
             id="thirdshirtImg"
-            imagesrc="/images/frame3.png"
+            imagesrc="/images/Frame3.png"
             pvalue="CHECKERED SHIRT"
             rate="180"
           />
           <Photo
             cardNo="fourth"
             id="fourthshirtImg"
-            imagesrc="/images/frame4.png"
+            imagesrc="/images/Frame4.png"
             pvalue="SLEEVE STRIPED T-SHIRT"
             rate="130"
           />
