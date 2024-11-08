@@ -20,7 +20,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 * {
   margin: 0%;
   padding: 0%;
@@ -56,7 +55,6 @@ body {
   font-size: small;
   z-index: 1;
 }
-
 
 .sub-header {
   color: white;
@@ -127,9 +125,9 @@ body {
   border-radius: 50px;
   position: absolute;
   left: 700px;
-  top : 20px;
-  border : 2px solid black;
-} 
+  top: 20px;
+  border: 2px solid black;
+}
 
 #searchIcon {
   position: absolute;
@@ -137,7 +135,7 @@ body {
   left: 10px;
 }
 
- #inputbox {
+#inputbox {
   width: 500px;
   height: 40px;
   background: #f0f0f0;
@@ -159,14 +157,14 @@ body {
   font-size: 28px;
 }
 
+
 #posterImg {
   width: 100vw;
   height: 648px;
   position: absolute;
-  top: 100px;
+  top: 128px;
   z-index: 0;
 }
-
 
 #findBox {
   position: absolute;
@@ -235,8 +233,6 @@ body {
   position: absolute;
   border: 2px solid black;
 }
-
-
 
 .rates {
   position: absolute;
@@ -327,4 +323,184 @@ body {
   font-size: 15px;
   line-height: 22px;
   color: #00000099;
+}
+
+.page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  border: 2px solid rgba(242, 52, 52, 0.729);
+  z-index: 0;
+}
+
+.logos {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 122px;
+  top: 777px;
+  background-color: black;
+}
+
+#versaceImg {
+  position: absolute;
+  z-index: 1;
+  width: 176.48px;
+  height: 43.16px;
+  top: 41px;
+  left: 100px;
+  border: 1px solid white;
+  left: 100px;
+  padding: 0.01px 0px 0.01px 0px;
+}
+
+#ZaraImg {
+  position: absolute;
+  width: 111px;
+  height: 43.16px;
+  top: 41px;
+  left: 382.48px;
+  border: 1px solid white;
+  padding: 0.01px 0px 0.01px 0px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+#GucciImg {
+  border: 1px solid white;
+  position: absolute;
+  width: 176.48px;
+  height: 43.16px;
+  top: 41px;
+  left: 579.48px;
+  padding: 1.86px 0px 1.86px 0px;
+}
+
+#PradaImg {
+  border: 1px solid white;
+  position: absolute;
+  width: 216.48px;
+  height: 43.16px;
+  top: 41px;
+  left: 871.48px;
+  padding: 0.4px 0px 0.4px 0px;
+}
+
+#CalvinKleinImg {
+  border: 1px solid white;
+  position: absolute;
+  width: 216.48px;
+  height: 43.16px;
+  top: 41px;
+  left: 1211.48px;
+  padding: 0.4px 0px 0.4px 0px;
+}
+
+#newArrivals {
+  position: absolute;
+  width: 500px;
+  height: 58px;
+  top: 200px;
+  left: 518px;
+  gap: 0px;
+  opacity: 0px;
+  color: black;
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+  border: 1px solid black;
+  line-height: 57.6px;
+}
+
+#one {
+  position: absolute;
+  top: 300px;
+  left: 100px;
+  height: 380px;
+  width: 298px;
+  display: inline-block;
+}
+
+#firshirtImg {
+  width: 100%;
+  height: auto;
+}
+
+#second {
+  position: absolute;
+  top: 300px;
+  left: 445px;
+  height: 380px;
+  width: 298px;
+  display: inline-block;
+}
+
+#secondshirtImg {
+  width: 100%;
+  height: auto;
+}
+
+#third {
+  position: absolute;
+  top: 300px;
+  left: 790px;
+  height: 380px;
+  width: 298px;
+  display: inline-block;
+}
+
+#thirdshirtImg {
+  width: 100%;
+  height: auto;
+}
+
+#fourth {
+  position: absolute;
+  top: 300px;
+  left: 1135px;
+  height: 380px;
+  width: 298px;
+  display: inline-block;
+}
+
+#fourthshirtImg {
+  width: 100%;
+  height: auto;
+}
+
+#ptitle {
+  color: black;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: left;
+}
+
+#prate {
+  color: black;
+  width: 55px;
+  height: 32px;
+  font-size: 20px;
+  font-weight: 700;
+  gap: 10px;
+  border: 2px solid black;
+}
+
+#viewBtn {
+  width: 218px;
+  height: 52px;
+
+  background-color: #f0f0f0;
+  color: black;
+  padding-top: 13px;
+  padding-bottom: 16px;
+  padding-right: 54px;
+  padding-left: 54px;
+  position: absolute;
+  bottom: -650px;
+  left: 611px;
+  border-radius: 62px;
+  gap: 12px;
+  outline: 0.2px solid black;
+  font-size: 20px;
 }

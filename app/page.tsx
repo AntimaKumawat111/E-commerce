@@ -8,6 +8,7 @@ import LeftContainer from "./LeftContanir";
 import Vector from "../public/images/Vector.png";
 import Vector2 from "../public/images/Vector2.png";
 import Btn from "./Bttn";
+import Logos from "./page2nd/logos";
 
 export default function Home() {
   return (
@@ -22,6 +23,13 @@ export default function Home() {
         <Btn id="shopBtn" />
         
       </div>
+
+        <div className="page2">
+        
+          <Logos />
+        </div>
+
+
     </div>
   );
 }
