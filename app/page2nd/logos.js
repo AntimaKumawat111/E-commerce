@@ -22,7 +22,7 @@ export default function Logos() {
   return (
     <>
       <div className="logos">
-        <img
+        <Image
           src="public/images/Versace.png"
           alt="Versace"
           id="versaceImg"
@@ -30,7 +30,7 @@ export default function Logos() {
           width={100}
           height={100}
         />
-        <img
+        <Image
           src="public/images/Zara.png"
           alt="Zara"
           id="ZaraImg"
@@ -38,7 +38,7 @@ export default function Logos() {
           width={100}
           height={100}
         />
-        <img
+        <Image
           src="public/images/Gucci.png"
           alt="Gucci"
           id="GucciImg"
@@ -46,7 +46,7 @@ export default function Logos() {
           width={100}
           height={100}
         />
-        <img
+        <Image
           src="public/images/Prada.png"
           alt="Prada"
           id="PradaImg"
@@ -54,7 +54,7 @@ export default function Logos() {
           width={100}
           height={100}
         />
-        <img
+        <Image
           src="public/images/CalvinKlein.png"
           alt="Calvin Klein"
           id="CalvinKleinImg"
