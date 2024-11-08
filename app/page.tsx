@@ -52,19 +52,59 @@ export default function Home() {
       <div className="page1">
         <Header />
         <SubHeader />
-        <Image src={Rectangle2} alt="poster" id="posterImg" width={500} height={300} />
+        <Image
+          src={Rectangle2}
+          alt="poster"
+          id="posterImg"
+          width={500}
+          height={300}
+        />
         <LeftContainer />
         <Image src={Vector} alt="Vector" id="vector" width={100} height={100} />
-        <Image src={Vector2} alt="Vector" id="vector2" width={100} height={100} />
+        <Image
+          src={Vector2}
+          alt="Vector"
+          id="vector2"
+          width={100}
+          height={100}
+        />
         <Btn id="shopBtn" />
       </div>
 
       <div className="page2">
         <div className="logos">
-          <Image src={Versace} alt="Versace" id="versaceImg" className="logo" width={100} height={100} />
-          <Image src={Zara} alt="Zara" id="ZaraImg" className="logo" width={100} height={100} />
-          <Image src={Gucci} alt="Gucci" id="GucciImg" className="logo" width={100} height={100} />
-          <Image src={Prada} alt="Prada" id="PradaImg" className="logo" width={100} height={100} />
+          <Image
+            src={Versace}
+            alt="Versace"
+            id="versaceImg"
+            className="logo"
+            width={100}
+            height={100}
+          />
+          <Image
+            src={Zara}
+            alt="Zara"
+            id="ZaraImg"
+            className="logo"
+            width={100}
+            height={100}
+          />
+          <Image
+            src={Gucci}
+            alt="Gucci"
+            id="GucciImg"
+            className="logo"
+            width={100}
+            height={100}
+          />
+          <Image
+            src={Prada}
+            alt="Prada"
+            id="PradaImg"
+            className="logo"
+            width={100}
+            height={100}
+          />
           <Image
             src={CalvinKlein}
             alt="Calvin Klein"
@@ -74,8 +114,9 @@ export default function Home() {
             height={100}
           />
 
-          
-          <h1 id="newArrivals">NEW ARRIVALS</h1>
+          <div className="newArrivals">
+            <h1>NEW ARRIVALS</h1>
+          </div>
 
           <Photo
             cardNo="one"

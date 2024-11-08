@@ -396,7 +396,7 @@ body {
   padding: 0.4px 0px 0.4px 0px;
 }
 
-#newArrivals {
+.newArrivals {
   position: absolute;
   width: 500px;
   height: 58px;
@@ -408,8 +408,9 @@ body {
   font-size: 48px;
   font-weight: 800;
   text-align: center;
-  border: 3px solid black;
+  border: 2px solid black;
   line-height: 57.6px;
+  z-index : 3;
 }
 
 #one {
