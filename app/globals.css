@@ -600,7 +600,8 @@ body {
   border: 1px solid black;
   border-radius: 40px;
   background: #f0f0f0;
-  opacity: 0px;
+  /* opacity: 0px; */
+  z-index: 1;
 }
 
 #page4browse {
@@ -627,7 +628,7 @@ body {
   width: 417px;
   width: 425px;
   display: inline-block;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   z-index: 2;
   border-radius: 20px;
 }
