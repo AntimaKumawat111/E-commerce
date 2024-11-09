@@ -663,15 +663,15 @@ body {
   left: 94px;
   width: 684px;
   display: inline-block;
-  /* border: 1px solid black; */
-  z-index: 2;
+  border: 1px solid black;
+  z-index: 3;
   border-radius: 20px;
 }
 
 #eleventhImg {
   height: 289px;
   width: 100%;
-  /* border:2px solid black; */
+  border:2px solid black;
   object-fit: fill;
 }
 
@@ -681,8 +681,7 @@ body {
   left: 114px;
   width: 425px;
   display: inline-block;
-  /* border: 1px solid black; */
-  z-index: 2;
+  z-index: 3;
   border-radius: 20px;
 }
 
@@ -690,14 +689,5 @@ body {
   object-fit: fill;
   height: 289px;
   width: 100%;
-  /* border:2px solid black; */
 }
 
-/* 
-
-#tenthImg {
-  height: 289px;
-  width: 100%;
-  border:2px solid black;
-
-} */
