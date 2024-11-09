@@ -13,6 +13,10 @@ import Versace from "../public/images/Versace.png";
 import Gucci from "../public/images/Gucci.png";
 import Prada from "../public/images/Prada.png";
 import CalvinKlein from "../public/images/CalvinKlein.png";
+import Page5 from "./page5data";
+
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 type PhotoProps = {
   cardNo: string;
@@ -68,6 +72,17 @@ function Page4({ cardNo, id, imagesrc }: Page4Props) {
     </div>
   );
 }
+
+// function Page5() {
+//   return (
+//     <>
+//       <div className="page5ContanirData">
+//         <h1>This is a contanir </h1>
+//       </div>
+//       ;
+//     </>
+//   );
+// }
 
 export default function Home() {
   return (
@@ -232,6 +247,19 @@ export default function Home() {
             imagesrc="/images/Frame12.png"
             id="twelvethImg"
           />
+        </div>
+      </div>
+
+      <div className="page5">
+        <h1 id="page5Header">OUR HAPPY CUSTOMERS</h1>
+        <ArrowBackIcon id="backword" />
+        <ArrowForwardIcon id="forword" />
+
+        <div className="page5Content">
+          <Page5 />
+          <Page5 />
+          <Page5 />
+          <Page5 />
         </div>
       </div>
     </div>
