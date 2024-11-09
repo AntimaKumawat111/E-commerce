@@ -31,8 +31,8 @@ function Photo({ cardNo, id, imagesrc, pvalue, rate }: PhotoProps) {
           alt="product"
           className="card_img"
           id={id}
-          width={300} // Adjust width as required
-          height={300} // Adjust height as required
+          width={300}
+          height={300}
         />
         <div className="card_info">
           <a href="" target="_blank">
@@ -41,6 +41,29 @@ function Photo({ cardNo, id, imagesrc, pvalue, rate }: PhotoProps) {
             <p id="prate">${rate}</p>
           </a>
         </div>
+      </div>
+    </div>
+  );
+}
+
+type Page4Props = {
+  cardNo: string;
+  id: string;
+  imagesrc: string;
+};
+
+function Page4({ cardNo, id, imagesrc }: Page4Props) {
+  return (
+    <div className="cards" id={cardNo}>
+      <div className="card">
+        <Image
+          src={imagesrc}
+          alt="product"
+          className="card_img"
+          id={id}
+          width={300}
+          height={300}
+        />
       </div>
     </div>
   );
@@ -71,61 +94,50 @@ export default function Home() {
         <Btn id="shopBtn" />
       </div>
 
-        <div className="logos">
-          <Image
-            src={Versace}
-            alt="Versace"
-            id="versaceImg"
-            className="logo"
-            width={100}
-            height={100}
-          />
-          <Image
-            src={Zara}
-            alt="Zara"
-            id="ZaraImg"
-            className="logo"
-            width={100}
-            height={100}
-          />
-          <Image
-            src={Gucci}
-            alt="Gucci"
-            id="GucciImg"
-            className="logo"
-            width={100}
-            height={100}
-          />
-          <Image
-            src={Prada}
-            alt="Prada"
-            id="PradaImg"
-            className="logo"
-            width={100}
-            height={100}
-          />
-          <Image
-            src={CalvinKlein}
-            alt="Calvin Klein"
-            id="CalvinKleinImg"
-            className="logo"
-            width={100}
-            height={100}
-          />
-        </div>
+      <div className="logos">
+        <Image
+          src={Versace}
+          alt="Versace"
+          id="versaceImg"
+          className="logo"
+          width={100}
+          height={100}
+        />
+        <Image
+          src={Zara}
+          alt="Zara"
+          id="ZaraImg"
+          className="logo"
+          width={100}
+          height={100}
+        />
+        <Image
+          src={Gucci}
+          alt="Gucci"
+          id="GucciImg"
+          className="logo"
+          width={100}
+          height={100}
+        />
+        <Image
+          src={Prada}
+          alt="Prada"
+          id="PradaImg"
+          className="logo"
+          width={100}
+          height={100}
+        />
+        <Image
+          src={CalvinKlein}
+          alt="Calvin Klein"
+          id="CalvinKleinImg"
+          className="logo"
+          width={100}
+          height={100}
+        />
+      </div>
 
-
-
-
-
-
-
-
-
-
-        
-        <div className="page2">
-      
+      <div className="page2">
         <div>
           <h1 id="newArrivals">NEW ARRIVALS</h1>
 
@@ -161,33 +173,9 @@ export default function Home() {
           />
           <button id="viewBtn">View All</button>
         </div>
-        </div> 
+      </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div className="page3">
-
-      
+      <div className="page3">
         <h1 id="topSelling">TOP SELLING</h1>
 
         <Photo
@@ -223,12 +211,29 @@ export default function Home() {
         />
 
         <button id="view2Btn">View All</button>
-        </div> 
+      </div>
 
+      <div className="page4">
+        <div className="middleContainer">
+          <h1 id="page4browse">BROWSE BY DRESS STYLE</h1>
 
+          <Page4 cardNo="nineth" imagesrc="/images/Frame9.png" id="ninthImg" />
 
+          <Page4 cardNo="tenth" imagesrc="/images/Frame10.png" id="tenthImg" />
 
+          <Page4
+            cardNo="eleventh"
+            imagesrc="/images/Frame11.png"
+            id="eleventhImg"
+          />
 
+          <Page4
+            cardNo="twelveth"
+            imagesrc="/images/Frame12.png"
+            id="twelvethImg"
+          />
+        </div>
+      </div>
     </div>
   );
 }

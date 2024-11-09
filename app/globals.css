@@ -330,7 +330,6 @@ body {
   height: 122px;
   top: 777px;
   background-color: black;
-  /* display: none; */
 }
 
 #versaceImg {
@@ -501,6 +500,7 @@ body {
   height: 298px;
   width: 100%;
   border: 1px solid black;
+  object-fit: fill;
 }
 
 #pstars {
@@ -533,7 +533,6 @@ body {
   height: 380px;
   width: 298px;
   display: inline-block;
-  border: 1px solid black;
 }
 
 #sixth {
@@ -583,3 +582,122 @@ body {
   outline: 0.2px solid black;
   font-size: 15px;
 }
+
+.page4 {
+  height: 866px;
+  width: 100%;
+  border: 2px solid rgba(55, 242, 52, 0.832);
+  position: relative;
+}
+
+.middleContainer {
+  position: absolute;
+  top: 0px;
+  left: 100px;
+  height: 866px;
+  width: 1330px;
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 40px;
+  background: #f0f0f0;
+  opacity: 0px;
+}
+
+#page4browse {
+  position: absolute;
+  width: 750px;
+  height: 58px;
+  top: 10px;
+  left: 238px;
+  gap: 0px;
+  color: black;
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+  outline: 1px solid black;
+  line-height: 57.6px;
+  z-index: 2;
+  margin: 60px;
+}
+
+#nineth {
+  position: relative;
+  top: 210px;
+  left: 94px;
+  width: 417px;
+  width: 425px;
+  display: inline-block;
+  /* border: 1px solid black; */
+  z-index: 2;
+  border-radius: 20px;
+}
+
+#ninthImg {
+  height: 289px;
+  width: 100%;
+  /* border: 2px solid black; */
+  object-fit: fill;
+}
+
+#tenth {
+  position: relative;
+  top: 210px;
+  left: 110px;
+  display: inline-block;
+  /* border: 1px solid black; */
+  z-index: 2;
+  border-radius: 20px;
+  width: 684px;
+}
+
+#tenthImg {
+  height: 289px;
+  width: 100%;
+  /* border:2px solid black; */
+  object-fit: fill;
+}
+
+#eleventh {
+  position: relative;
+  top: 220px;
+  left: 94px;
+  width: 684px;
+  display: inline-block;
+  /* border: 1px solid black; */
+  z-index: 2;
+  border-radius: 20px;
+}
+
+#eleventhImg {
+  height: 289px;
+  width: 100%;
+  /* border:2px solid black; */
+  object-fit: fill;
+}
+
+#twelveth {
+  position: relative;
+  top: 220px;
+  left: 114px;
+  width: 425px;
+  display: inline-block;
+  /* border: 1px solid black; */
+  z-index: 2;
+  border-radius: 20px;
+}
+
+#twelvethImg {
+  object-fit: fill;
+  height: 289px;
+  width: 100%;
+  /* border:2px solid black; */
+}
+
+/* 
+
+#tenthImg {
+  height: 289px;
+  width: 100%;
+  border:2px solid black;
+
+} */
