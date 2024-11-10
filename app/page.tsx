@@ -368,7 +368,7 @@ export default function Home() {
                 height={300}
               />
               <Image
-                src="/images/PayPal.png"
+                src="/images/Paypal.png"
                 alt="PayPal "
                 id="payPal"
                 width={500}
