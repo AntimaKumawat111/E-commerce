@@ -28,14 +28,13 @@ body {
 body {
   background-color: white;
   overflow-x: hidden;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 .page1 {
   height: 100vh;
   width: 100vw;
   background-color: white;
-  /* border: 2px solid green; */
   position: relative;
   overflow: hidden;
 }
@@ -123,7 +122,6 @@ body {
   position: absolute;
   left: 700px;
   top: 20px;
-  border: 2px solid black;
 }
 
 #searchIcon {
@@ -136,7 +134,6 @@ body {
   width: 500px;
   height: 40px;
   background: #f0f0f0;
-  border: none;
   outline: none;
 }
 
@@ -174,11 +171,9 @@ body {
   font-weight: 900;
   width: 490px;
   height: 180px;
-  border: 2px solid black;
   line-height: 60px;
   gap: 0%;
   word-spacing: 0.1px;
-  font-family: "Poppins", sans-serif;
 }
 
 #browsebox {
@@ -191,7 +186,6 @@ body {
   left: 100px;
   font-weight: 100;
   font-size: 14px;
-  border: 2px solid black;
   opacity: 0.7;
 }
 
@@ -202,7 +196,6 @@ body {
   color: black;
   left: 750px;
   position: absolute;
-  border: 2px solid black;
 }
 
 #shopBtn {
@@ -229,7 +222,6 @@ body {
   color: #000000;
   left: 1355px;
   position: absolute;
-  border: 2px solid black;
 }
 
 .rates {
@@ -247,7 +239,6 @@ body {
 .firstRate {
   width: 141px;
   height: 76px;
-  border: 2px solid black;
 }
 
 #firstValue {
@@ -256,7 +247,6 @@ body {
   font-weight: 550;
   font-size: 45px;
   line-height: 54px;
-  border: 2px solid black;
 }
 
 #firstP {
@@ -270,7 +260,6 @@ body {
 
 .verticalLine {
   width: 2px;
-  border: 1px;
   height: 76px;
   rotate: -90px;
   background-color: black;
@@ -280,7 +269,6 @@ body {
 .secondRate {
   width: 156px;
   height: 76px;
-  border: 2px solid black;
 }
 
 #secondValue {
@@ -303,7 +291,6 @@ body {
 .thirdRate {
   width: 171px;
   height: 76px;
-  border: 2px solid;
 }
 
 #thirdValue {
@@ -339,7 +326,6 @@ body {
   height: 43.16px;
   top: 41px;
   left: 100px;
-  border: 1px solid white;
   left: 100px;
   padding: 0.01px 0px 0.01px 0px;
 }
@@ -350,14 +336,12 @@ body {
   height: 43.16px;
   top: 41px;
   left: 382.48px;
-  border: 1px solid white;
   padding: 0.01px 0px 0.01px 0px;
   gap: 0px;
   opacity: 0px;
 }
 
 #GucciImg {
-  border: 1px solid white;
   position: absolute;
   width: 176.48px;
   height: 43.16px;
@@ -367,7 +351,6 @@ body {
 }
 
 #PradaImg {
-  border: 1px solid white;
   position: absolute;
   width: 216.48px;
   height: 43.16px;
@@ -377,7 +360,6 @@ body {
 }
 
 #CalvinKleinImg {
-  border: 1px solid white;
   position: absolute;
   width: 216.48px;
   height: 43.16px;
@@ -406,7 +388,6 @@ body {
   font-size: 48px;
   font-weight: 800;
   text-align: center;
-  border: 2px solid black;
   line-height: 57.6px;
   z-index: 3;
 }
@@ -418,7 +399,6 @@ body {
   height: 380px;
   width: 298px;
   display: inline-block;
-  border: 1px solid black;
   z-index: 3;
 }
 
@@ -467,7 +447,6 @@ body {
   font-size: 25px;
   font-weight: 700;
   gap: 10px;
-  border: 2px solid black;
 }
 
 #viewBtn {
@@ -499,7 +478,6 @@ body {
   margin-bottom: 13px;
   height: 298px;
   width: 100%;
-  border: 1px solid black;
   object-fit: fill;
 }
 
@@ -585,8 +563,7 @@ body {
 
 .page4 {
   height: 866px;
-  width: 100%;
-  border: 2px solid rgba(55, 242, 52, 0.832);
+  width: 100vw;
   position: relative;
 }
 
@@ -597,10 +574,8 @@ body {
   height: 866px;
   width: 1330px;
   display: inline-block;
-  border: 1px solid black;
   border-radius: 40px;
   background: #f0f0f0;
-  /* opacity: 0px; */
   z-index: 1;
 }
 
@@ -615,7 +590,6 @@ body {
   font-size: 48px;
   font-weight: 800;
   text-align: center;
-  outline: 1px solid black;
   line-height: 57.6px;
   z-index: 2;
   margin: 60px;
@@ -628,7 +602,6 @@ body {
   width: 417px;
   width: 425px;
   display: inline-block;
-  border: 1px solid black;
   z-index: 2;
   border-radius: 20px;
 }
@@ -636,7 +609,6 @@ body {
 #ninthImg {
   height: 289px;
   width: 100%;
-  /* border: 2px solid black; */
   object-fit: fill;
 }
 
@@ -645,7 +617,6 @@ body {
   top: 210px;
   left: 110px;
   display: inline-block;
-  /* border: 1px solid black; */
   z-index: 2;
   border-radius: 20px;
   width: 684px;
@@ -654,7 +625,6 @@ body {
 #tenthImg {
   height: 289px;
   width: 100%;
-  /* border:2px solid black; */
   object-fit: fill;
 }
 
@@ -664,7 +634,6 @@ body {
   left: 94px;
   width: 684px;
   display: inline-block;
-  border: 1px solid black;
   z-index: 3;
   border-radius: 20px;
 }
@@ -672,7 +641,6 @@ body {
 #eleventhImg {
   height: 289px;
   width: 100%;
-  border: 2px solid black;
   object-fit: fill;
 }
 
@@ -694,32 +662,33 @@ body {
 
 .page5 {
   height: 100vh;
-  width: 100%;
-  background-color: lightblue;
-  border: 2px solid rgb(242, 52, 52);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: relative;
 }
 
 #page5Header {
   position: absolute;
-  width: 654px;
-  height: 58px;
-  top: 3363px;
+  top: 75px;
   left: 100px;
+  width: 744px;
+  height: 58px;
   color: black;
-  gap: 0px;
   font-size: 48px;
-  font-weight: 700;
-  line-height: 57.6px;
-  text-align: left;
+  font-weight: 800;
+  margin-bottom: 20px;
 }
 
 #forword {
   position: absolute;
   color: black;
   font-size: 35px;
-  z-index: 2;
+  z-index: 3;
   left: 1400px;
-  top: 3420px;
+  top: 120px;
 }
 
 #backword {
@@ -728,34 +697,104 @@ body {
   font-size: 35px;
   z-index: 2;
   left: 1350px;
-  top: 3420px;
+  top: 120px;
 }
 
 .page5Content {
-  position: absolute;
-  top: 3490px;
-  height: 240px;
-  width: 100%;
-  display: inline-block;
-  border: 1px solid black;
-  background: #f0f0f0;
-  overflow-y: hidden;
-  /* overflow-x:scroll; */
   display: flex;
-  justify-content: space-around;
+  gap: 7px;
+  top: 150px;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
   justify-content: center;
-  gap: 5px;
-  z-index: 0;
 }
 
 .page5ContanirData {
-  position: relative;
-  top: 0;
-  border: 2px solid black;
-  height: 100%;
-  width: 400px;
+  height: 240px;
+  width: 440px;
+  border: 1px solid black;
   border-radius: 20px;
-  display: inline-block;
-  z-index: 2;
+  display: flex;
+  justify-content: center;
   color: black;
+  text-align: center;
+}
+
+.page5MiddleContanir {
+  margin: 20px;
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.name {
+  text-align: start;
+  color: black;
+  height: auto;
+  width: 156px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.stars {
+  text-align: start;
+  color: black;
+}
+
+.paragraph {
+  height: 110px;
+  text-align: start;
+  overflow: auto;
+  font-size: 17px;
+  word-spacing: -1.5px;
+  gap: 0;
+}
+
+.stayContainer {
+  position: absolute;
+  height: 180px;
+  width: 1330px;
+  background: black;
+  left: 100px;
+  z-index: 2;
+  top: 500px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#staybox {
+  color: white;
+  width: 550px;
+  height: 90px;
+  gap: 0px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: left;
+  margin-right: 350px;
+  
+}
+
+.sectionRight{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.sectionRightdata{
+  padding: 10px;
+  background: white;
+  border-radius: 50px;
+  color: black;
+  width: 300px;
+  font-size:18px;
+  font-weight: 550;
+
+}
+
+#sectionRightInputBox{
+  margin-bottom: 10px;
 }

@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 
 import Image from "next/image";
 import Header from "./Header";
@@ -17,6 +18,8 @@ import Page5 from "./page5data";
 
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+
+import StayContainer from "./StayContainer";
 
 type PhotoProps = {
   cardNo: string;
@@ -73,18 +76,45 @@ function Page4({ cardNo, id, imagesrc }: Page4Props) {
   );
 }
 
-// function Page5() {
-//   return (
-//     <>
-//       <div className="page5ContanirData">
-//         <h1>This is a contanir </h1>
-//       </div>
-//       ;
-//     </>
-//   );
-// }
-
 export default function Home() {
+  const [currentIndex, setCurrentIndex] = useState(0); // The state tracks who is looking at which surveys
+  const containers = [
+    {
+      name: "Sarah M.",
+      pdata:
+        "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+    },
+    {
+      name: "Alex K.",
+      pdata:
+        "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.",
+    },
+    {
+      name: "James L.",
+      pdata:
+        "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+    },
+    { name: "fourth", pdata: "Fourth's review text goes here." },
+    { name: "fifth", pdata: "Fifth's review text goes here." },
+    { name: "sixth", pdata: "Sixth's review text goes here." },
+    { name: "seventh", pdata: "Seventh's review text goes here." },
+    { name: "eighth", pdata: "Eighth's review text goes here." },
+  ];
+
+  const handleForwardClick = () => {
+    if (currentIndex < containers.length - 3) {
+      //This ensures that the final set is not exceeded
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
+  const handleBackwardClick = () => {
+    if (currentIndex > 0) {
+      //  ensures not to go past the first set
+      setCurrentIndex(currentIndex - 1);
+    }
+  };
+
   return (
     <div className="container">
       <div className="page1">
@@ -252,15 +282,19 @@ export default function Home() {
 
       <div className="page5">
         <h1 id="page5Header">OUR HAPPY CUSTOMERS</h1>
-        <ArrowBackIcon id="backword" />
-        <ArrowForwardIcon id="forword" />
+        <ArrowBackIcon id="backword" onClick={handleBackwardClick} />
+        <ArrowForwardIcon id="forword" onClick={handleForwardClick} />
 
         <div className="page5Content">
-          <Page5 />
-          <Page5 />
-          <Page5 />
-          <Page5 />
+          {containers.slice(currentIndex, currentIndex + 3).map((container) => (
+            <Page5
+              key={container.name}
+              name={container.name}
+              pdata={container.pdata}
+            />
+          ))}
         </div>
+        <StayContainer />
       </div>
     </div>
   );
