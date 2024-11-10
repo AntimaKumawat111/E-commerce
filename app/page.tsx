@@ -372,7 +372,7 @@ export default function Home() {
                 alt="PayPal "
                 id="payPal"
                 width={500}
-                height={800}
+                height={300}
               />
               <Image
                 src="/images/IPay.png"
@@ -386,7 +386,7 @@ export default function Home() {
                 alt="GPay "
                 id="gPay"
                 width={500}
-                height={500}
+                height={300}
               />
             </div>
           </div>
