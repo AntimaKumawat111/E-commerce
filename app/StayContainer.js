@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 
 export default function StayContainer() {
   const [isData, setIsData] = useState(false);
@@ -16,6 +17,7 @@ export default function StayContainer() {
       <div className="stayContainer">
         <h3 id="staybox">STAY UPTO DATE ABOUT OUR LATEST OFFERS </h3>
         <div className="sectionRight">
+          <EmailOutlinedIcon id="emailIcon"/>
           <input
             placeholder="Enter your E-mail address"
             id="sectionRightInputBox"

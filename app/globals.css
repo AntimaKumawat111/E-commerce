@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=IBM+Plex+Sans+Devanagari:wght@100;200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -17,7 +21,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Geist", sans-serif;
 }
 
 * {
@@ -40,7 +44,7 @@ body {
 }
 
 .header {
-  color: white;
+  /* color: white; */
   width: 100vw;
   height: 38px;
   display: flex;
@@ -50,6 +54,18 @@ body {
   font-weight: 300;
   font-size: small;
   z-index: 1;
+}
+
+#headerAncherTag{
+  color: white;
+  text-decoration: underline;
+}
+
+#closeBtn{
+  position: absolute;
+  top: 5px;
+  right: 100px;
+  font-size: 30px;
 }
 
 .sub-header {
@@ -172,8 +188,8 @@ body {
   width: 490px;
   height: 180px;
   line-height: 60px;
-  gap: 0%;
   word-spacing: 0.1px;
+  letter-spacing: 0;
 }
 
 #browsebox {
@@ -775,26 +791,184 @@ body {
   line-height: 45px;
   text-align: left;
   margin-right: 350px;
-  
 }
 
-.sectionRight{
+.sectionRight {
   display: flex;
   flex-direction: column;
-  
 }
 
-.sectionRightdata{
+#emailIcon{
+position: absolute;
+margin:7px;
+z-index:1;
+color: black;
+left: 950px;
+opacity: 0.5;
+}
+
+.sectionRightdata {
   padding: 10px;
   background: white;
   border-radius: 50px;
   color: black;
-  width: 300px;
-  font-size:18px;
+  width: 350px;
+  font-size: 18px;
   font-weight: 550;
+}
+
+#sectionRightInputBox {
+  margin-bottom: 10px;
+  padding-left: 55px;
+}
+
+.lastContanir {
+  position: absolute;
+  top: 600px;
+  height: 500px;
+  width: 100vw;
+  background: #F0F0F0;
+
+  display: flex;
+}
+
+.lastBoxContainer {
+  position: absolute;
+  top: 130px;
+  left: 100px;
+  height: 240px;
+  width: 1330px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid black 0.3;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 65px;
+}
+
+.lastBoxtags {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 175px;
+  color: black;
+}
+
+#lastBoxHeading {
+  font-size: 20px;
+  margin-bottom: 17px;
+}
+
+.lastBoxValue {
+  height: 133px;
+  font-size: 17px;
+  opacity: 0.7;
+}
+
+.lastFirstBox {
+  color: black;
+}
+
+#lastShopHeading {
+  width: 167px;
+  height: 48px;
+  font-size: 45.45px;
+  font-weight: 900;
+  line-height: 40.15px;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+#lastBoxParagraph {
+  width: 370px;
+  height: 77px;
+  font-size: 21px;
+  font-weight: 100;
+  line-height: 22px;
+  text-align: left;
+  word-spacing: 1px;
+  opacity: 0.7;
+  margin-right: 55px;
+}
+
+/* .lastFirstBoxIcons{
+  border: 1px solid black;
+} */
+
+#TwiterIcon {
+  background: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  margin: 2px;
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+}
+
+#FacebookIcon {
+  border-radius: 50%;
+  background: white;
+  border: 2px solid black;
+  margin: 2px;
+  padding: 3px;
+  height: 30px;
+  width: 30px;
 
 }
 
-#sectionRightInputBox{
-  margin-bottom: 10px;
+#InstagramIcon {
+  border: 2px solid black;
+  background: white;
+  margin: 2px;
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+
+
+}
+
+#GithubIcon {
+  border: 2px solid black;
+  background: white;
+  border-radius: 50%;
+  margin: 2px;
+  padding: 3px;
+  height: 30px;
+  width: 30px;
+
+}
+
+.footer {
+  position: absolute;
+  bottom: 60px;
+  height: 55px;
+  width: 1330px;
+  left: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.bottomIcons {
+  width: 269px;
+  height: 21px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+#footerParagraph {
+  color: black;
+  height: 61px;
+  width: auto;
+  margin-top: 25px;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.bottomLogos {
+  height: 54px;
+  width: 350px;
+  display: flex;
+  margin-left: 635px;
+  align-items: center;
 }

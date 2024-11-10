@@ -16,10 +16,17 @@ import Prada from "../public/images/Prada.png";
 import CalvinKlein from "../public/images/CalvinKlein.png";
 import Page5 from "./page5data";
 
+// import CloseIcon from '@mui/icons-material/Close';
+// import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-
 import StayContainer from "./StayContainer";
+import LastContainer from "./Last_Container";
+
+import GitHubIcon from "@mui/icons-material/GitHub";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import FacebookIcon from "@mui/icons-material/Facebook";
 
 type PhotoProps = {
   cardNo: string;
@@ -118,6 +125,7 @@ export default function Home() {
   return (
     <div className="container">
       <div className="page1">
+        {/* <CloseIcon id="closeBtn" /> */}
         <Header />
         <SubHeader />
         <Image
@@ -295,6 +303,94 @@ export default function Home() {
           ))}
         </div>
         <StayContainer />
+
+        <div className="lastContanir">
+          <div className="lastBoxContainer">
+            <div className="lastFirstBox">
+              <h1 id="lastShopHeading">Shop.p</h1>
+              <p id="lastBoxParagraph">
+                We have clothes that suits your style and which you’re proud to
+                wear. From women to men.
+              </p>
+
+              <div className="lastFirstBoxIcons">
+                <TwitterIcon id="TwiterIcon" />
+                <FacebookIcon id="FacebookIcon" />
+                <InstagramIcon id="InstagramIcon" />
+                <GitHubIcon id="GithubIcon" />
+              </div>
+            </div>
+
+            <LastContainer
+              heading="Company"
+              firstValue="About"
+              secondValue="Features"
+              thirdValue="Works"
+              fourthValue="Career"
+            />
+            <LastContainer
+              heading="Help"
+              firstValue="Customer Support"
+              secondValue="Delivery Details"
+              thirdValue="Terms & Conditions"
+              fourthValue="Privacy Policy"
+            />
+            <LastContainer
+              heading="FAQ"
+              firstValue="Account"
+              secondValue="Manage Deliveries"
+              thirdValue="Orders"
+              fourthValue="Payments"
+            />
+            <LastContainer
+              heading="Resources"
+              firstValue="Free eBooks"
+              secondValue="Development Tutorial"
+              thirdValue="How to - Blog"
+              fourthValue="Youtube Playlist"
+            />
+          </div>
+          <div className="footer">
+            <p id="footerParagraph">Shop.co © 2000-2023, All Rights Reserved</p>
+            <div className="bottomLogos">
+              <Image
+                src="/images/Visa.png"
+                alt="Visa "
+                id="visa"
+                width={500}
+                height={300}
+              />
+              <Image
+                src="/images/MasterCard.png"
+                alt="MasterCard "
+                id="masterCard"
+                width={500}
+                height={300}
+              />
+              <Image
+                src="/images/PayPal.png"
+                alt="PayPal "
+                id="payPal"
+                width={500}
+                height={800}
+              />
+              <Image
+                src="/images/IPay.png"
+                alt="IPay "
+                id="iPay"
+                width={500}
+                height={300}
+              />
+              <Image
+                src="/images/GPay.png"
+                alt="GPay "
+                id="gPay"
+                width={500}
+                height={500}
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
