@@ -1,5 +1,6 @@
 "use client";
-import { useState } from "react";
+// import { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import Image from "next/image";
 import Header from "./Header";
@@ -15,7 +16,7 @@ import Gucci from "../public/images/Gucci.png";
 import Prada from "../public/images/Prada.png";
 import CalvinKlein from "../public/images/CalvinKlein.png";
 import Page5 from "./page5data";
-
+import PosterImg2 from "../public/images/PosterImg.png";
 // import CloseIcon from '@mui/icons-material/Close';
 // import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
@@ -84,7 +85,9 @@ function Page4({ cardNo, id, imagesrc }: Page4Props) {
 }
 
 export default function Home() {
-  const [currentIndex, setCurrentIndex] = useState(0); // The state tracks who is looking at which surveys
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [itemsToShow, setItemsToShow] = useState(3); // default 3 items on larger screens
+
   const containers = [
     {
       name: "Sarah M.",
@@ -108,16 +111,29 @@ export default function Home() {
     { name: "eighth", pdata: "Eighth's review text goes here." },
   ];
 
+  useEffect(() => {
+    const updateItemsToShow = () => {
+      if (window.innerWidth <= 600) {
+        setItemsToShow(1); // for small screens, show only 1 item
+      } else {
+        setItemsToShow(3); // for larger screens, show 3 items
+      }
+    };
+
+    updateItemsToShow(); // Initial check
+    window.addEventListener("resize", updateItemsToShow); // Update on resize
+
+    return () => window.removeEventListener("resize", updateItemsToShow);
+  }, []);
+
   const handleForwardClick = () => {
-    if (currentIndex < containers.length - 3) {
-      //This ensures that the final set is not exceeded
+    if (currentIndex < containers.length - itemsToShow) {
       setCurrentIndex(currentIndex + 1);
     }
   };
 
   const handleBackwardClick = () => {
     if (currentIndex > 0) {
-      //  ensures not to go past the first set
       setCurrentIndex(currentIndex - 1);
     }
   };
@@ -143,6 +159,14 @@ export default function Home() {
           id="vector2"
           width={100}
           height={100}
+        />
+
+        <Image
+          src={PosterImg2}
+          alt="poster"
+          id="posterImg2"
+          width={800}
+          height={800}
         />
         <Btn id="shopBtn" />
       </div>
@@ -191,7 +215,7 @@ export default function Home() {
       </div>
 
       <div className="page2">
-        <div>
+        <div className=" page2Container">
           <h1 id="newArrivals">NEW ARRIVALS</h1>
 
           <Photo
@@ -268,7 +292,7 @@ export default function Home() {
 
       <div className="page4">
         <div className="middleContainer">
-          <h1 id="page4browse">BROWSE BY DRESS STYLE</h1>
+          <h1 id="page4_heading">BROWSE BY DRESS STYLE</h1>
 
           <Page4 cardNo="nineth" imagesrc="/images/Frame9.png" id="ninthImg" />
 
@@ -294,14 +318,17 @@ export default function Home() {
         <ArrowForwardIcon id="forword" onClick={handleForwardClick} />
 
         <div className="page5Content">
-          {containers.slice(currentIndex, currentIndex + 3).map((container) => (
-            <Page5
-              key={container.name}
-              name={container.name}
-              pdata={container.pdata}
-            />
-          ))}
+          {containers
+            .slice(currentIndex, currentIndex + itemsToShow)
+            .map((container) => (
+              <Page5
+                key={container.name}
+                name={container.name}
+                pdata={container.pdata}
+              />
+            ))}
         </div>
+
         <StayContainer />
 
         <div className="lastContanir">
@@ -321,35 +348,51 @@ export default function Home() {
               </div>
             </div>
 
-            <LastContainer
-              heading="Company"
-              firstValue="About"
-              secondValue="Features"
-              thirdValue="Works"
-              fourthValue="Career"
-            />
-            <LastContainer
-              heading="Help"
-              firstValue="Customer Support"
-              secondValue="Delivery Details"
-              thirdValue="Terms & Conditions"
-              fourthValue="Privacy Policy"
-            />
-            <LastContainer
-              heading="FAQ"
-              firstValue="Account"
-              secondValue="Manage Deliveries"
-              thirdValue="Orders"
-              fourthValue="Payments"
-            />
-            <LastContainer
-              heading="Resources"
-              firstValue="Free eBooks"
-              secondValue="Development Tutorial"
-              thirdValue="How to - Blog"
-              fourthValue="Youtube Playlist"
-            />
+            <div className="lastContainerData">
+              <div className="last_Both_contanir">
+
+              <div className="last_firstAndsecond_data">
+                <LastContainer
+                  id="company_box"
+                  heading="Company"
+                  firstValue="About"
+                  secondValue="Features"
+                  thirdValue="Works"
+                  fourthValue="Career"
+                />
+                <LastContainer
+                  id="help_box"
+                  heading="Help"
+                  firstValue="Customer Support"
+                  secondValue="Delivery Details"
+                  thirdValue="Terms & Conditions"
+                  fourthValue="Privacy Policy"
+                />
+              </div>
+
+              <div className="last_thirdAndfourth_data">
+                <LastContainer
+                  id="faq_box"
+                  heading="FAQ"
+                  firstValue="Account"
+                  secondValue="Manage Deliveries"
+                  thirdValue="Orders"
+                  fourthValue="Payments"
+                />
+                <LastContainer
+                  id="resources_box"
+                  heading="Resources"
+                  firstValue="Free eBooks"
+                  secondValue="Development Tutorial"
+                  thirdValue="How to - Blog"
+                  fourthValue="Youtube Playlist"
+                />
+              </div>
+
+              </div>
+            </div>
           </div>
+
           <div className="footer">
             <p id="footerParagraph">Shop.co © 2000-2023, All Rights Reserved</p>
             <div className="bottomLogos">
